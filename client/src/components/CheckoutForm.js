@@ -26,7 +26,6 @@ const CheckoutForm = (props) => {
     e.preventDefault();
     setShowSuccessMessage(true);
   };
-
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -67,7 +66,7 @@ const CheckoutForm = (props) => {
           Zip:
           <input name="zip" value={values.zip} onChange={handleChanges} />
         </label>
-        <button>Checkout</button>
+        <button type='submit'>Checkout</button>
       </form>
 
       {showSuccessMessage && (
